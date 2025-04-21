@@ -1,0 +1,184 @@
+.view1 {
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.view2 {
+  width: 100%;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.view3 {
+  color: #3a3a3a;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.view4 {
+  align-items: stretch;
+  border-radius: 8px;
+  background-color: #fbfcfe;
+  display: flex;
+  margin-top: 24px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  gap: 16px;
+}
+
+.view5 {
+  align-items: stretch;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.view6 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.view7 {
+  color: #3a3a3a;
+  font-feature-settings:
+    "liga" off,
+    "clig" off;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  align-self: stretch;
+  margin: auto 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.customSearch1 {
+  width: 300px;
+  max-width: 400px;
+}
+
+.view8 {
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+  gap: 12px;
+}
+
+.view9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.customCard {
+  width: 100%;
+  min-width: 0;
+}
+
+.cardImage {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.cardBody {
+  margin-top: 12px;
+  width: 100%;
+}
+
+.cardHeader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  font-family: Inter;
+  font-size: 18px;
+  color: #3a3a3a;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.cardTitle {
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.cardIcon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  align-self: stretch;
+  margin: auto 0;
+  flex-shrink: 0;
+}
+
+.cardDescription {
+  color: #616161;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 4px;
+}
+
+.cardTags {
+  align-items: center;
+  display: flex;
+  margin-top: 12px;
+  width: 100%;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cardButtons {
+  padding-top: 12px;
+  align-items: center;
+  display: flex;
+  margin-top: 12px;
+  width: 100%;
+  gap: 8px;
+}
+
+.emptyCardImage {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .view9 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .view9 {
+    grid-template-columns: 1fr;
+  }
+
+  .view6 {
+    gap: 20px;
+  }
+
+  .customSearch1 {
+    width: 100%;
+  }
+}
