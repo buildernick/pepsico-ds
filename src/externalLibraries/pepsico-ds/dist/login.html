@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>@storybook/cli - Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <style></style>
+    <script
+      src="https://global.oktacdn.com/okta-auth-js/7.4.1/okta-auth-js.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <script>
+      async function auth() {
+        // create OktaAuth instance
+        const config = {
+          issuer: 'https://secure.pepsico.com/oauth2/aus1ljxpv3z9G8NGl0h8',
+          clientId: window.OKTA_CLIENT_ID || '0oa1u15bcrkW7uYNT0h8',
+          redirectUri: window.location.origin + '/login',
+          postLogoutRedirectUri: window.location.origin + '/logout',
+          pkce: true,
+          scopes: ['openid', 'profile', 'email'],
+        }
+        const authClient = new OktaAuth(config)
+        if (authClient.isLoginRedirect()) {
+          try {
+            await authClient.handleRedirect()
+          } catch (e) {
+            // log or display error details
+          }
+        } else if (!(await authClient.isAuthenticated())) {
+          // Start the browser based oidc flow, then parse tokens from the redirect callback url
+          authClient.signInWithRedirect({ originalUri: '/' })
+        } else {
+          window.location.href = window.location.origin
+        }
+      }
+      auth()
+    </script>
+    <div id="root">Please wait...</div>
+  </body>
+</html>

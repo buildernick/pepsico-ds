@@ -1,0 +1,23 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { Popover } from '.';
+
+declare const meta: Meta<typeof Popover>;
+export default meta;
+type Story = StoryObj<typeof Popover>;
+export declare const TopLeftArrow: Story;
+export declare const TopMiddleArrow: Story;
+export declare const TopRightArrow: Story;
+export declare const RightArrow: Story;
+export declare const BottomRightArrow: Story;
+export declare const BottomMiddleArrow: Story;
+export declare const BottomLeftArrow: Story;
+export declare const LeftArrow: Story;
+export declare const LeftArrowWithCustomCrossIcon: Story;
+export declare const TopLeftArrowDark: Story;
+export declare const TopMiddleArrowDark: Story;
+export declare const TopRightArrowDark: Story;
+export declare const RightArrowDark: Story;
+export declare const BottomRightArrowDark: Story;
+export declare const BottomMiddleArrowDark: Story;
+export declare const BottomLeftArrowDark: Story;
+export declare const LeftArrowDark: Story;

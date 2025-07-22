@@ -1,0 +1,21 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { Search } from '.';
+
+declare const meta: Meta<typeof Search>;
+export default meta;
+type Story = StoryObj<typeof Search>;
+export declare const SearchMedium: Story;
+export declare const SearchMediumFocus: Story;
+export declare const SearchMediumDark: Story;
+export declare const SearchMediumDisabled: Story;
+export declare const SearchMediumDarkDisabled: Story;
+export declare const SearchSmall: Story;
+export declare const SearchSmallFocus: Story;
+export declare const AutoComplete: Story;
+export declare const LeadingSearchIcon: Story;
+export declare const WithClearableButton: Story;
+export declare const WithoutClearableButton: Story;
+export declare const CustomIcon: Story;
+export declare const SearchSmallDark: Story;
+export declare const SearchSmallDisabled: Story;
+export declare const SearchSmallDarkDisabled: Story;

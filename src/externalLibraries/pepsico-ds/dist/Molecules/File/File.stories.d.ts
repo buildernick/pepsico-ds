@@ -1,0 +1,22 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { File } from '.';
+
+declare const meta: Meta<typeof File>;
+export default meta;
+type Story = StoryObj<typeof File>;
+export declare const Default: Story;
+export declare const ImageUpload: Story;
+export declare const SingleState: Story;
+export declare const EditState: Story;
+export declare const ErrorState: Story;
+export declare const Disabled: Story;
+export declare const ProgressState: Story;
+export declare const CompletedState: Story;
+export declare const Skeleton: Story;
+export declare const FullExample: Story;
+export declare const DefaultDark: Story;
+export declare const ErrorDark: Story;
+export declare const SingleDark: Story;
+export declare const CompletedStateDark: Story;
+export declare const ReactHookFormsExample: Story;
+export declare const UsingRefExample: Story;

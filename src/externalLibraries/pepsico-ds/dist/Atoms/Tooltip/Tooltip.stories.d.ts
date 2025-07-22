@@ -1,0 +1,24 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { Tooltip } from '.';
+
+declare const meta: Meta<typeof Tooltip>;
+export default meta;
+type Story = StoryObj<typeof Tooltip>;
+export declare const WithMaxWidth: Story;
+export declare const WithReactNodeTitle: Story;
+export declare const TopLeft: Story;
+export declare const TopMiddle: Story;
+export declare const TopRight: Story;
+export declare const Right: Story;
+export declare const BottomRight: Story;
+export declare const BottomMiddle: Story;
+export declare const BottomLeft: Story;
+export declare const Left: Story;
+export declare const TopLeftDark: Story;
+export declare const TopMiddleDark: Story;
+export declare const TopRightDark: Story;
+export declare const RightDark: Story;
+export declare const BottomRightDark: Story;
+export declare const BottomMiddleDark: Story;
+export declare const BottomLeftDark: Story;
+export declare const LeftDark: Story;

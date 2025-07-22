@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>@storybook/cli - Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="prefetch"
+      href="./sb-common-assets/nunito-sans-bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./sb-common-assets/fonts.css" />
+
+    <link href="./sb-manager/runtime.js" rel="modulepreload" />
+
+    
+    <link href="./sb-addons/links-0/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-controls-1/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-actions-2/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-backgrounds-3/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-viewport-4/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-toolbars-5/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-measure-6/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/essentials-outline-7/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/interactions-8/manager-bundle.js" rel="modulepreload" />
+       
+
+    <style>
+      #storybook-root[hidden] {
+        display: none !important;
+      }
+	    .hide {
+        display: none !important;
+      }
+    </style>
+
+    <script
+      src="https://global.oktacdn.com/okta-auth-js/7.4.1/okta-auth-js.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div id="root" class="hide"></div>
+
+    <script>
+      async function auth() {
+        // create OktaAuth instance
+        const config = {
+          issuer: 'https://secure.pepsico.com/oauth2/aus1ljxpv3z9G8NGl0h8',
+          clientId: window.OKTA_CLIENT_ID || '0oa1u15bcrkW7uYNT0h8',
+          redirectUri: window.location.origin + '/login',
+          postLogoutRedirectUri: window.location.origin + '/logout',
+          pkce: true,
+          scopes: ['openid', 'profile', 'email'],
+        }
+        
+        const authClient = new OktaAuth(config)
+        if (authClient.isLoginRedirect()) {
+          try {
+            await authClient.handleRedirect()
+          } catch (e) {
+            // log or display error details
+          }
+        } else if (!(await authClient.isAuthenticated())) {
+          // Start the browser based oidc flow, then parse tokens from the redirect callback url
+          authClient.signInWithRedirect({ originalUri: '/' })
+        } else {
+          // User is authenticated
+          setTimeout(() => {
+            const el = document.getElementById('root')
+            if (el) {
+              el.classList.remove('hide')
+            }
+          }, 100);
+        }
+      }
+      auth()
+    </script>
+    
+    <script>
+      
+        
+          window['FEATURES'] = {
+  "warnOnLegacyHierarchySeparator": true,
+  "buildStoriesJson": false,
+  "storyStoreV7": true,
+  "argTypeTargetsV7": true,
+  "legacyDecoratorFileOrder": false
+};
+        
+      
+        
+          window['REFS'] = {};
+        
+      
+        
+          window['LOGLEVEL'] = "info";
+        
+      
+        
+          window['DOCS_OPTIONS'] = {
+  "defaultName": "Docs",
+  "autodocs": "tag"
+};
+        
+      
+        
+          window['CONFIG_TYPE'] = "PRODUCTION";
+        
+      
+        
+      
+        
+      
+    </script>
+    
+
+    <script type="module">
+      import './sb-manager/runtime.js';
+
+      
+      import './sb-addons/links-0/manager-bundle.js';
+      
+      import './sb-addons/essentials-controls-1/manager-bundle.js';
+      
+      import './sb-addons/essentials-actions-2/manager-bundle.js';
+      
+      import './sb-addons/essentials-backgrounds-3/manager-bundle.js';
+      
+      import './sb-addons/essentials-viewport-4/manager-bundle.js';
+      
+      import './sb-addons/essentials-toolbars-5/manager-bundle.js';
+      
+      import './sb-addons/essentials-measure-6/manager-bundle.js';
+      
+      import './sb-addons/essentials-outline-7/manager-bundle.js';
+      
+      import './sb-addons/interactions-8/manager-bundle.js';
+      
+    </script>
+
+    <link href="./sb-preview/runtime.js" rel="prefetch" as="script" />
+  </body>
+</html>

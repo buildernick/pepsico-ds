@@ -1,0 +1,23 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { AccordionItemV2 } from '.';
+
+declare const meta: Meta<typeof AccordionItemV2>;
+export default meta;
+type Story = StoryObj<typeof AccordionItemV2>;
+export declare const AccordionItemDefault: Story;
+export declare const AccordionItemDefaultExpanded: Story;
+export declare const AccordionItemDefaultDisabled: Story;
+export declare const AccordionItemDefaultWithRightAccessory: Story;
+export declare const AccordionItemDefaultSkeleton: Story;
+export declare const AccordionItemLayer1: Story;
+export declare const AccordionItemLayer1Expanded: Story;
+export declare const AccordionItemLayer1Disabled: Story;
+export declare const AccordionItemLayer1WithRightAccessory: Story;
+export declare const AccordionItemLayer1Skeleton: Story;
+export declare const AccordionItemNaked: Story;
+export declare const AccordionItemNakedExpanded: Story;
+export declare const AccordionItemNakedDisabled: Story;
+export declare const AccordionItemNakedWithRightAccessory: Story;
+export declare const AccordionItemNakedSkeleton: Story;
+export declare const AccordionWithButton: Story;
+export declare const AccordionWithCustomLabel: Story;

@@ -1,0 +1,17 @@
+export declare const base: string;
+export declare const Border1: string;
+export declare const Border2: string;
+export declare const Border3: string;
+export declare const Border4: string;
+export declare const Border5: string;
+export declare const Border6: string;
+export declare const Border7: string;
+export declare const Border8: string;
+export declare const Border9: string;
+export declare const Corner1: string;
+export declare const Corner2: string;
+export declare const Corner3: string;
+export declare const Shadow1: string;
+export declare const Shadow2: string;
+export declare const Shadow3: string;
+export declare const Shadow4: string;

@@ -1,0 +1,24 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { DatePickerInput } from '.';
+
+declare const meta: Meta<typeof DatePickerInput>;
+export default meta;
+type Story = StoryObj<typeof DatePickerInput>;
+export declare const Default: Story;
+export declare const DefaultWithCertainDisabledDates: Story;
+export declare const DefaultWithSomeSelectableDates: Story;
+export declare const WithoutSelected: Story;
+export declare const Disabled: Story;
+export declare const Error: Story;
+export declare const Skelton: Story;
+export declare const Small: Story;
+export declare const DisabledSmall: Story;
+export declare const ErrorSmall: Story;
+export declare const SkeltonSmall: Story;
+export declare const Dark: Story;
+export declare const DarkSmall: Story;
+export declare const DarkError: Story;
+export declare const DarkDisabled: Story;
+export declare const DarkSkelton: Story;
+export declare const ReactHookFormsExample: Story;
+export declare const UsingRefExample: Story;

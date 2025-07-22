@@ -1,0 +1,21 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { DatePickerMenu } from '.';
+
+declare const meta: Meta<typeof DatePickerMenu>;
+export default meta;
+type Story = StoryObj<typeof DatePickerMenu>;
+export declare const SingleSelection: Story;
+export declare const SingleSelectionDisabled: Story;
+export declare const SingleSelectionWeekendDisabled: Story;
+export declare const SingleSelectionSomeDisabled: Story;
+export declare const SingleSelectionOnlySelectFrom: Story;
+export declare const SingleSelectionWithoutSelection: Story;
+export declare const SingleSelectionToday: Story;
+export declare const SingleSelectionDark: Story;
+export declare const SingleSelectionDarkSelected: Story;
+export declare const SingleSelectionDarkToday: Story;
+export declare const RangeSelection: Story;
+export declare const RangeSelectionFromSelected: Story;
+export declare const RangeSelectionSelected: Story;
+export declare const RangeSelectionDark: Story;
+export declare const RangeSelectionDarkSelected: Story;

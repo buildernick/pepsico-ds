@@ -1,0 +1,21 @@
+import { Meta, StoryObj } from '@storybook/react';
+import { TextArea } from '.';
+
+declare const meta: Meta<typeof TextArea>;
+export default meta;
+type Story = StoryObj<typeof TextArea>;
+export declare const Default: Story;
+export declare const ValueState: Story;
+export declare const ErrorState: Story;
+export declare const Disabled: Story;
+export declare const HideToolbar: Story;
+export declare const HideToolbarWithMaxLength: Story;
+export declare const JustTextArea: Story;
+export declare const MaxLength: Story;
+export declare const CustomStyle: Story;
+export declare const DefaultDark: Story;
+export declare const CodeSnippet: Story;
+export declare const CodeSnippetDark: Story;
+export declare const ReactHookFormsExample: Story;
+export declare const ReactHookFormsUsingControllerExample: Story;
+export declare const UsingRefExample: Story;
