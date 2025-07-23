@@ -1,13 +1,12 @@
 import React from "react";
-import TextInput from "../components/TextInput";
-import CustomButton from "../components";
+import { TextInput, Button } from "pepsico-ds";
 
 const UserForm: React.FC = () => {
   return (
     <form>
       <TextInput label="First Name" name="firstName" />
       <TextInput label="Last Name" name="lastName" />
-      <CustomButton
+      <Button
         type="submit"
         text="Submit"
         variant="primary"
